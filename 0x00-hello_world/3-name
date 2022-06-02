@@ -1,2 +1,2 @@
 #!/bin/bash
-ld -o cisfun
+gcc cisfun.c -o cisfun

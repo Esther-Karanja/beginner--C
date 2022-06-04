@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- *Return: 0 (Success)
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -18,5 +18,5 @@ int main(void)
 	printf("size of long int: %zu bytes\n", sizeof(c));
 	printf("size of long long int: %zu bytes\n", sizeof(d));
 	printf("size of float: %zu bytes\n", sizeof(e));
-	Return(0);
+	return (0);
 }

@@ -12,7 +12,6 @@ int main(void)
 {
 	char ch = 'a';
 
-		/*print lowercase letters except q and e*/
 		for (ch = 'a'; ch <= 'z' != 'q' && 'e'; ch++)
 		{
 			putchar(ch);

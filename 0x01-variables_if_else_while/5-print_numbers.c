@@ -8,12 +8,12 @@
 */
 int main(void)
 {
-	int n = 1;
+	int i = '0';
 
 	/*print all single digit numbers of base ten starting from zero*/
-	for (n = 1; n < 10; n++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		putchar(n);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);

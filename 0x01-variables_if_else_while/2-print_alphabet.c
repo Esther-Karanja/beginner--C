@@ -9,9 +9,8 @@
 int main(void)
 {
 	char ch;
-	ch = 'a';
 
-		/*prints the alphabet in lowercase followed by  new line*/
+	ch = 'a';
 
 		for (ch = 'a'; ch <= 'z'; ch++)
 		{

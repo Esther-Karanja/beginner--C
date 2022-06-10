@@ -10,15 +10,21 @@ int main(void)
 	int i;
 
 	for (i = 1; i <= 100; i++)
+	{
 		if ((i % 3) == 0)
-			printf("fizz\t");
+			printf("fizz");
 
 		else if ((i % 5) == 0)
-			printf("buzz\t");
+			printf("buzz");
 
-		else if ((i % 3) && (i % 5))
-			printf("fizz buzz\t");
+		else if (((i % 3) || (i % 5)) == 0)
+			printf("fizz buzz");
 		else
-			printf("%d\t", i);
+			printf("%d", i);
+
+		if (i != 100)
+			printf(" ");
+	}
+	printf ("\n");
 	return (0);
 }

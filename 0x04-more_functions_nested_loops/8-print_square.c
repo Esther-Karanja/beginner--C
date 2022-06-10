@@ -16,8 +16,8 @@ void print_square(int size)
 		for (col = 0; col < row; col++)
 		{
 			_putchar (35);
-			_putchar ('\n');
 		}
+		_putchar ('\n');
 	}
 	if (size <= 0)
 		_putchar ('\n');

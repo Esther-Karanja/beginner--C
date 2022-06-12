@@ -5,10 +5,9 @@
  * @a: integer input
  * @b: second integer input
  *
- * Return: always 0 (success)
+ * Return: the result
 */
 int add(int a, int b)
 {
-	_putchar (a + b);
-	return (0);
+	return (a + b);
 }

@@ -10,9 +10,11 @@
 */
 void puts2(char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0 ; i < *(str + i); i += 2)
+	while (i < *(str + i))
+		i = i + 2;
+
 	{
 		_putchar (*(str + i));
 	}

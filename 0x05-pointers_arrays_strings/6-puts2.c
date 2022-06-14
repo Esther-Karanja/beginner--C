@@ -6,13 +6,13 @@
  *of a string, starting with the first character
  * @str: string input
  *
- * Return: characters printed
+ * Return: void
 */
 void puts2(char *str)
 {
 	int i = 0;
 
-	while (*(str + i) < '\0')
+	while (*(str + i) > i)
 
 	{
 		_putchar(*(str + i));

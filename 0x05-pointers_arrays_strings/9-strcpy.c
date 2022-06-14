@@ -6,17 +6,17 @@
  * @src: source
  * @dest: destination:
  *
- * Return: destination
+ * Return: pointer to destination
 */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
-	while (src[i] + 1)
+	while ((*src + i))
 	{
 		*(dest + i) = *(src + i);
 		i++;
 	}
 	*(dest + i) = '\0';
-	return (0);
+	return (dest);
 }

@@ -1,0 +1,24 @@
+#include "main.h"
+#include <string.h>
+
+/**
+ * rev_string - function that reverses a string
+ * @s: sting to be reversed
+ *
+ * Return: reversed string
+*/
+void rev_string(char *s)
+{
+	int i;
+	int n;
+	char temp;
+	char s1[10] = "My School";
+	n = strlen (s1);
+
+	for (i = 0; i < (n/2); i++)
+	{
+		temp = s1[i];
+		s1[i] = s1[n-1-i];
+		s1[n-1-i] = temp;
+	}
+}

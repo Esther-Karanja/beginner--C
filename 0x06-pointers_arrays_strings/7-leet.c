@@ -13,16 +13,8 @@ char *leet(char *st)
 
 	while (st[i] != '\0')
 	{
-		if (st[i] >= 'A' && st[i] <= 'Z')
-		{
-			st[i] = st[i] - 32;
-			i++;
-		}
-		if (st[i] >= 'a' && st[i] <= 'z')
-		{
-			st[i] = st[i] + 32;
-			i++;
-		}
+		st[i] = st[i] - 32;
+		i++;
 	}
 	return (ptr);
 }

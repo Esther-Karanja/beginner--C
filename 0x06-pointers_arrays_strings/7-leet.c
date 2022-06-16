@@ -14,6 +14,7 @@ char *leet(char *st)
 	if (st[i] != '\0')
 	{
 		st[i] = st[i] - 32;
+		i++;
 	}
 	return (ptr);
 }

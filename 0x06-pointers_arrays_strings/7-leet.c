@@ -11,10 +11,18 @@ char *leet(char *st)
 	int i = 0;
 	char *ptr = st;
 
-	if (st[i] != '\0')
+	while (st[i] != '\0')
 	{
-		st[i] = st[i] - 32;
-		i++;
+		if (st[i] >= 'A' && st[i] <= 'Z')
+		{
+			st[i] = st[i] + 32;
+			i++;
+		}
+		if (st[i] >= 'a' && st[i] <= 'z')
+		{
+			st[i] = st[i] - 32;
+			i++;
+		}
 	}
 	return (ptr);
 }

@@ -13,15 +13,19 @@ int *array_range(int min, int max)
 {
 	int *ptr;
 	int i;
+	int j;
 
-	i = min;
 	if (min > max)
 		return (NULL);
-	for (i = min; i <= max; i++)
+	for (i = 0; i < (max - min); i++)
 
 	ptr = (int *)malloc(i + 1 * sizeof(int));
 	if (ptr == NULL)
 		return (NULL);
-	else
-		return (ptr);
+
+	for (j = 0; j < i; j++)
+	{
+		ptr[j] = min++;
+	}
+	return (ptr);
 }

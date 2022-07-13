@@ -20,8 +20,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		numb = va_arg(list, int);
 		printf("%d", numb);
-
-		while (separator != NULL)
 		if (i < n - 1 && separator)
 			printf("%s", separator);
 	}

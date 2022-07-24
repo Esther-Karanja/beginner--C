@@ -6,6 +6,8 @@
  * need to flip to get from one number to another
  * @n: first number
  * @m: second number
+ *
+ * Return: flipped bits to get m from n
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
@@ -15,12 +17,13 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	size = sizeof(n) * 8 - 1;
 
-	for (i = 0; i < size; i++)
+	while (i <= size)
 	{
 		if ((n & 1) != (m & 1))
 			flip++;
 		n = n >> 1;
 		m = m >> 1;
+		i++;
 	}
 	return (flip);
 }

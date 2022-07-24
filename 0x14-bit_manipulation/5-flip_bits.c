@@ -13,11 +13,12 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int size;
 	unsigned long int i;
-	unsigned long int flip = 0;
+	unsigned long int flip;
 
 	size = sizeof(n) * 8 - 1;
+	flip = 0;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i <= size; i++)
 	{
 		if ((n & 1) != (m & 1))
 			flip++;

@@ -11,9 +11,12 @@
 void print_binary(unsigned long int n)
 {
 	int i;
+	unsigned long int size;
 	unsigned int j, k;
 	char andflag;
 
+	size = sizeof(n) * 7;
+	while (size > 0)
 	for (i = 7; i > 0; i--)
 	{
 		j = i;

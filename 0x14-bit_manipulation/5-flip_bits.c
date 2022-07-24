@@ -12,7 +12,7 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int size;
-	unsigned int i;
+	unsigned long int i;
 	unsigned long int flip = 0;
 
 	size = sizeof(n) * 8 - 1;
